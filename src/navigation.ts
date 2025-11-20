@@ -3,180 +3,127 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Project',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
-    },
-    {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
+          text: 'Features',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Platforms',
+          href: getPermalink('/#platforms'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Technology',
+          href: 'https://github.com/project-robius/robrix',
+          target: '_blank'
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Talks & Presentations',
+          href: getPermalink('/talks'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: 'Development',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Getting Started',
+          href: 'https://github.com/project-robius/robrix#building-running-robrix-on-desktop',
+          target: '_blank'
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'Contributing',
+          href: 'https://github.com/project-robius/robrix/blob/main/CONTRIBUTING.md',
+          target: '_blank'
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
+          text: 'Project Tracker',
+          href: 'https://github.com/orgs/project-robius/projects/4/',
+          target: '_blank'
         },
         {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Report Issues',
+          href: 'https://github.com/project-robius/robrix/issues',
+          target: '_blank'
         },
       ],
     },
     {
-      text: 'Blog',
+      text: 'Community',
       links: [
         {
-          text: 'Blog List',
+          text: 'Matrix Room',
+          href: 'https://matrix.to/#/#robius-robrix:matrix.org',
+          target: '_blank'
+        },
+        {
+          text: 'Project Robius',
+          href: 'https://github.com/project-robius',
+          target: '_blank'
+        },
+        {
+          text: 'Blog',
           href: getBlogPermalink(),
         },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [
+    { text: 'View Source', href: 'https://github.com/project-robius/robrix', target: '_blank' },
+    { text: 'Download', href: 'https://github.com/project-robius/robrix/releases', target: '_blank', variant: 'primary' }
+  ],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Project',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Features', href: getPermalink('/#features') },
+        { text: 'Platforms', href: getPermalink('/#platforms') },
+        { text: 'GitHub Repository', href: 'https://github.com/project-robius/robrix', target: '_blank' },
+        { text: 'Downloads', href: 'https://github.com/project-robius/robrix/releases', target: '_blank' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Technology',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Project Robius', href: 'https://github.com/project-robius', target: '_blank' },
+        { text: 'Makepad UI', href: 'https://github.com/makepad/makepad', target: '_blank' },
+        { text: 'Rust Language', href: 'https://rust-lang.org', target: '_blank' },
+        { text: 'Matrix Protocol', href: 'https://matrix.org', target: '_blank' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Community',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Matrix Chat', href: 'https://matrix.to/#/#robius-robrix:matrix.org', target: '_blank' },
+        { text: 'Project Tracker', href: 'https://github.com/orgs/project-robius/projects/4/', target: '_blank' },
+        { text: 'Report Issues', href: 'https://github.com/project-robius/robrix/issues', target: '_blank' },
+        { text: 'Blog', href: getBlogPermalink() },
       ],
     },
     {
-      title: 'Company',
+      title: 'Related',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Matrix.org', href: 'https://matrix.org', target: '_blank' },
+        { text: 'Element X', href: 'https://element.io', target: '_blank' },
+        { text: 'GOSIM Conference', href: 'https://gosim.org', target: '_blank' },
+        { text: 'Rust Foundation', href: 'https://rustfoundation.org', target: '_blank' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'License', href: 'https://github.com/project-robius/robrix/blob/main/LICENSE' },
+    { text: 'Code of Conduct', href: 'https://github.com/project-robius/robrix/blob/main/CODE_OF_CONDUCT.md' },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/project-robius/robrix' },
+    { ariaLabel: 'Matrix', icon: 'tabler:brand-matrix', href: 'https://matrix.to/#/#robius-robrix:matrix.org' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    © 2024 Project Robius. Robrix is open-source software available under permissive licensing.
   `,
 };

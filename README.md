@@ -1,11 +1,23 @@
-# 🚀 AstroWind
+# Robrix Website
 
-<img src="https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+A modern website for Robrix, a Rust Matrix client built atop Project Robius. This website showcases the project features, platform support, and conference presentations.
 
-🌟 _Most *starred* & *forked* Astro theme in 2022, 2023 & 2024_. 🌟
+## 🚀 Features
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+- **Hero Section**: Project overview with download and source code links
+- **Features Grid**: Technical capabilities and platform support
+- **Technology Stack**: Rust, Project Robius, and Makepad UI information
+- **Conference Recognition**: Presentations at GOSIM conferences and Matrix Live
+- **Platform Support**: Desktop and mobile availability
+- **Professional Navigation**: Project, Development, and Community links
+
+## 🛠️ Tech Stack
+
+- **Astro 5.12** - Static site generator
+- **Tailwind CSS** - Utility-first CSS framework
+- **TypeScript** - Type-safe development
+- **Astro Icons** - Icon system with Tabler icons
+- **Responsive Design** - Mobile-first approach
 
 - ✅ **Production-ready** scores in **PageSpeed Insights** reports.
 - ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
@@ -297,6 +309,82 @@ That would be very useful for all of us and we would be happy to listen and take
 
 Initially created by **Arthelokyo** and maintained by a community of [contributors](https://github.com/arthelokyo/astrowind/graphs/contributors).
 
-## License
+## 🌐 GitHub Pages Deployment
 
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+This site is configured for automatic deployment to GitHub Pages via GitHub Actions.
+
+### Setup Instructions:
+
+1. **Update Configuration**:
+   - Edit `src/config.yaml` and replace `[YOUR-USERNAME]` with your actual GitHub username
+   - Edit `astro.config.ts` and replace `[YOUR-USERNAME]` with your actual GitHub username
+
+2. **Enable GitHub Pages**:
+   - Go to your repository settings on GitHub
+   - Navigate to Settings → Pages
+   - Set Source to "GitHub Actions"
+
+3. **Push to Main Branch**:
+   ```bash
+   git add .
+   git commit -m "Configure for GitHub Pages deployment"
+   git push origin main
+   ```
+
+4. **View Deployment**:
+   - Actions tab will show the deployment progress
+   - Once complete, your site will be available at: `https://[YOUR-USERNAME].github.io/vibecoding/`
+
+### Manual Deployment (Alternative):
+
+If you prefer manual deployment:
+
+```bash
+# Build the site
+npm run build
+
+# Deploy the dist/ folder to GitHub Pages
+ghp-import -n dist -b gh-pages
+git push origin gh-pages
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/          # Static assets (images, styles)
+├── components/      # Reusable components
+│   ├── widgets/     # Page sections and features
+│   └── ui/          # UI components
+├── layouts/         # Page layout templates
+├── pages/           # Route definitions
+├── config.yaml      # Site configuration
+├── navigation.ts    # Navigation structure
+└── utils/           # Helper functions
+```
+
+## 🎨 Customization
+
+### Colors and Styling
+- Edit `tailwind.config.mjs` for theme customization
+- Modify CSS variables in layouts for branding
+
+### Content
+- Update `src/config.yaml` for site metadata
+- Edit page content in `src/pages/`
+- Modify navigation structure in `src/navigation.ts`
+
+### Images
+- Add images to `src/assets/images/`
+- Reference with `~/assets/images/filename.jpg`
+
+## 📄 License
+
+This project follows the same licensing as the Robrix project. Please refer to the main Robrix repository for license information.
+
+## 🔗 Links
+
+- **Robrix Project**: https://github.com/project-robius/robrix
+- **Project Robius**: https://github.com/project-robius
+- **Matrix Chat**: https://matrix.to/#/#robius-robrix:matrix.org
+- **Makepad UI**: https://github.com/makepad/makepad
