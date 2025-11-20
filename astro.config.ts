@@ -23,7 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: 'https://[YOUR-USERNAME].github.io/vibecoding',
+  site: 'https://guofoo.github.io/vibecoding',
 
   integrations: [
     tailwind({

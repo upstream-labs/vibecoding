@@ -1,6 +1,6 @@
 site:
   name: Robrix
-  site: 'https://[YOUR-USERNAME].github.io/vibecoding'
+  site: 'https://guofoo.github.io/vibecoding'
   base: '/vibecoding/'
   trailingSlash: false
 
